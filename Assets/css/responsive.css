@@ -1,25 +1,26 @@
 /* PC */
 @media (max-width: 1024px) {
- 
+
 }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px){
- 
+
 }
 
 /* Mobile */
+.s-full-with, 
+.s-col-full {
+    width: 100% !important;
+}
+
+.s-mt-8 {
+    margin-top: 8px !important;
+}
+
 @media (max-width: 740px) {
-    #nav {
-        display: block;
-    }
-
-    #nav > li {
-        display: block;
-    }
-
-    #nav > li:first-child {
-        display: inline-block;
+    #header {
+        overflow: hidden;
     }
 
     #header .mobile-menu-btn {
@@ -30,5 +31,37 @@
         display: none;
     }
 
+    #nav {
+        display: block;
+    }
 
+    #nav li a {
+        padding: 1px 24px;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav {
+        position: initial; /*gia tri mac dinh*/
+        background-color: #333;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    .contact-form {
+        margin-top: 16px;
+    }
 }
