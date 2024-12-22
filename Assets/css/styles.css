@@ -81,7 +81,8 @@ html {
     margin-top: 15px;
     border: none;
     text-align: center;
-    
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -205,7 +206,7 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%; /* Đặt chiều cao cho slider dựa trên chiều ngang của nó */
-    background: url('/Assets/img/slider/slider2.jpg') top center / cover no-repeat;
+    background: url('../img/slider/slider2.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content{
@@ -225,6 +226,7 @@ html {
 #slider .text-description{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 
 #content {
@@ -468,6 +470,16 @@ html {
     font-size: 18px;
     line-height: 1.5;
 }
+
+.Contact-info a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.Contact-info a:hover {
+    opacity: 1;
+}
+
 /* xác định ti- */
 .Contact-info i[class*="ti-"] {
     width: 30px;
@@ -493,17 +505,18 @@ html {
     text-align: center;
 }
 
-#footer .social-list {
+#footer .social-lists {
     font-size: 24px;
     cursor: pointer;
 }
 
-#footer .social-list a {
+#footer .social-lists a {
     color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
 }
+
 #footer .copy-right a:hover,
-#footer .social-list a:hover {
+#footer .social-lists a:hover {
     color: rgba(0, 0, 0, 0.4);
 }
 

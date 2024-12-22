@@ -1,24 +1,61 @@
 /* PC */
-@media (max-width: 1024px) {
+@media (max-width: 64em) {
+    /* Nội dung dành cho PC */
+}
 
+/* Mobile & Tablet */
+@media (max-width: 63.938em) {
+    .btn {
+        padding: 15px 16px;
+    }
+
+    #nav .subnav a {
+        padding: 5px 12px;
+    }
+
+    .contact-form .form-control {
+       padding: 15px;
+       font-size: 16px;
+    }
+
+    .Contact-info {
+        line-height: 2;
+    }
+
+    .contact-submit-btn {
+        font-size: 17px;
+    }
+
+    .social-lists {
+        font-size: 48px;
+    }
+
+    .social-lists a {
+        margin: 0 8px;
+    }
+
+    #footer .copy-right a {
+        padding: 12px 0;
+        display: inline-block;
+    }
 }
 
 /* Tablet */
-@media (min-width: 740px) and (max-width: 1023px){
-
+@media (min-width: 46.25em) and (max-width: 63.938em) {
+    /* Nội dung dành cho tablet */
 }
 
 /* Mobile */
-.s-full-with, 
-.s-col-full {
-    width: 100% !important;
-}
+@media (max-width: 46.188em) {
+    .s-full-width,
+    .s-col-full {
+        width: 100% !important;
+    }
 
-.s-mt-8 {
-    margin-top: 8px !important;
-}
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
 
-@media (max-width: 740px) {
     #header {
         overflow: hidden;
     }
@@ -48,7 +85,7 @@
     }
 
     #nav .subnav {
-        position: initial; /*gia tri mac dinh*/
+        position: initial; /* Giá trị mặc định */
         background-color: #333;
     }
 
@@ -62,6 +99,6 @@
     }
 
     .contact-form {
-        margin-top: 16px;
+        margin-top: 32px;
     }
 }
